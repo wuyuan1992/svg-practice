@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    baseProfile="full"
+    width="60rem"
+    height="40rem"
+    viewBox="0 0 300 200"
+>
+
+    <defs>
+        <linearGradient id="lg1">
+            <stop class="stop1" offset="0%" stop-color="aliceblue" stop-opacity=".8"></stop>
+            <stop class="stop2" offset="50%" stop-color="aliceblue" stop-opacity=".2"></stop>
+            <stop class="stop3" offset="100%" stop-color="aliceblue" stop-opacity=".8"></stop>
+        </linearGradient>
+        <!-- 使用同一颜色设置； 改变始末点 -->
+        <linearGradient id="lg2" x1="0" x2="1" y1=".2" y2=".2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lg1"/>
+    </defs>
+
+    <rect fill="trasparent" width="100%" height="100%" stroke="black" stroke-width="1" />
+
+</svg>

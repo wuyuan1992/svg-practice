@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>svg </title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+
+    <div class="container" style="position: relative; margin: 10rem auto;">
+        <img src="./img/m8.png" style="display: block; width: 60rem;"/>
+
+        <div class="svg-wrapper" style="
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        ">
+            <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                baseProfile="full"
+                width="60rem"
+                height="40rem"
+                viewBox="0 0 300 200"
+            >
+            
+                <defs>
+                    <linearGradient id="lg1"  x1="0" y1="0" x2="0" y2="1">
+                        <stop class="stop1" offset="0%" stop-color="#6f6f6f" stop-opacity=".8"></stop>
+                        <stop class="stop3" offset="100%" stop-color="#2e2e2e" stop-opacity=".4"></stop>
+                    </linearGradient>
+                    <!-- 使用同一颜色设置； 改变始末点 -->
+                    <linearGradient id="lg2" x1="0" x2="1" y1=".2" y2=".2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lg1"/>
+                </defs>
+            
+                <rect fill="transparent" width="100%" height="100%" stroke="black" stroke-width="1" />
+                
+                <!-- 机体轮廓 -->
+                <path 
+                    d="
+                        M 86 76
+                        h 50
+                        l 2 -2
+                        v -2
+                        l 2 -2
+                        h 76
+                        l 2 2
+                        v 76
+                        l -2 2
+                        h -131
+                        l -2 -2
+                        v -69
+                        Z
+                    "
+                    fill="transparent"
+                    stroke="black"
+                />
+
+
+
+
+                <!-- 镜头 -->
+                <circle
+                    cx="160.5" cy="117.5" r="28" 
+                    fill="transparent"
+                    stroke="#c1c2c3"
+                />
+                <circle
+                    cx="160.5" cy="117.5" r="26" 
+                    fill="transparent"
+                    stroke="#797a7b"
+                />
+                
+                <circle
+                    cx="160.5" cy="117.5" r="21.8" 
+                    fill="transparent"
+                    stroke="#c1c2c3"
+                    stroke-widht="1"
+                />
+
+                
+                <circle
+                    cx="160.5" cy="117.5" r="19" 
+                    fill="#403e3e"
+                    stroke="transparent"
+                />
+
+                <circle
+                    cx="160.5" cy="117.5" r="13" 
+                    fill="#171515"
+                    stroke="transparent"
+                />
+
+                <circle
+                    cx="160.5" cy="117.5" r="7" 
+                    fill="#000000"
+                    stroke="#272526"
+                />
+
+                <circle
+                    cx="160.5" cy="117.5" r="5" 
+                    fill="url(#lg1)"
+                    stroke="transparent"
+                />
+
+                
+
+            </svg>
+        </div>
+    </div>
+
+
+</body>
+</html>

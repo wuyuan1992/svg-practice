@@ -1,0 +1,69 @@
+    <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        baseProfile="full"
+        width="30rem"
+        height="30rem"
+        viewBox="0 0 100 100"
+    >
+    
+
+        <defs>
+            <linearGradient id="lg1">
+                <stop class="stop1" offset="0%" stop-color="aliceblue" stop-opacity=".8"></stop>
+                <stop class="stop2" offset="50%" stop-color="aliceblue" stop-opacity=".2"></stop>
+                <stop class="stop3" offset="100%" stop-color="aliceblue" stop-opacity=".8"></stop>
+            </linearGradient>
+            <!-- 使用同一颜色设置； 改变始末点 -->
+            <linearGradient id="lg2" x1="0" x2="1" y1=".2" y2=".2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lg1"/>
+        </defs>
+
+        <rect fill="gray" width="100%" height="100%" />
+
+
+        <!-- <circle fill="black" cx="50" cy="50" r="25"/> -->
+
+        <!-- <ellipse cx=50 cy=50 rx=25 ry=50 /> -->
+
+        <!-- <rect x=50 y=50 width=30 height=30 rx=25 ry=8  /> -->
+
+        <line
+            x1="10" y1="45" x2="45" y2="80"
+            stroke="orange" stroke-width="10" stroke-linecap="round"
+        />
+
+        <circle cx="10" cy="10" r="1" fill="red" />
+        <circle cx="10" cy="45" r="1" fill="red" />
+        <circle cx="45" cy="80" r="1" fill="red" />
+        <circle cx="80" cy="80" r="1" fill="red" />
+        <circle cx="10" cy="45" r="1" fill="red" />
+        <circle cx="10" cy="80" r="1" fill="red" />
+
+        <!-- <polyline
+            points="10 10, 10 20, 50 20, 80 80"
+            fill=""
+            stroke="orange" stroke-width="10" stroke-linecap="round"
+        /> -->
+
+
+        <polygon
+            points="10 10, 80 10, 80 80, 10 80"
+            fill="transparent"
+            stroke="orange" stroke-width="10" stroke-opacity=".2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        <path
+            d="
+                M 30 30
+                h 30
+                V 60
+                H 30
+                z
+            "
+            fill="url(#lg2)"
+            stroke="transparent"
+        />
+
+
+    </svg>
