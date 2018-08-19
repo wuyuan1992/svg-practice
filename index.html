@@ -9,7 +9,7 @@
 <body>
 
     <div class="container" style="position: relative; margin: 10rem auto;">
-        <img src="./img/m8.png" style="display: block; width: 60rem;"/>
+        <!-- <img src="./img/m8.png" style="display: block; width: 60rem;"/> -->
 
         <div class="svg-wrapper" style="
             position: absolute;
@@ -29,8 +29,8 @@
             
                 <defs>
                     <linearGradient id="lg1"  x1="0" y1="0" x2="0" y2="1">
-                        <stop class="stop1" offset="0%" stop-color="#6f6f6f" stop-opacity=".8"></stop>
-                        <stop class="stop3" offset="100%" stop-color="#2e2e2e" stop-opacity=".4"></stop>
+                        <stop class="stop1" offset="0%" stop-color="#6f6f6f" stop-opacity="1"></stop>
+                        <stop class="stop3" offset="100%" stop-color="#2e2e2e" stop-opacity="1"></stop>
                     </linearGradient>
                     <!-- 使用同一颜色设置； 改变始末点 -->
                     <linearGradient id="lg2" x1="0" x2="1" y1=".2" y2=".2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lg1"/>
@@ -55,8 +55,55 @@
                         v -69
                         Z
                     "
-                    fill="transparent"
+                    fill="#fafafa"
+                    fill-opacity=".2"
                     stroke="black"
+                />
+
+                <!-- 元器件1 -->
+                <rect
+                    x="122" y="80"
+                    width="10" height="7"
+                    rx="1" ry="1"
+                    fill="#403e3e"
+                    stroke="#333"
+                />
+
+                <circle cx="127" cy="83.5" r="2" fill="#787878" />
+
+                <!-- 元器件2 -->
+                
+                <circle cx="151.5" cy="81.5" r="5" fill="#df2434" />
+
+                <rect 
+                    x="161" y="76.5"
+                    width="16.5" height="11"
+                    rx="1" ry="1"
+                    fill="#6d6b6b"
+                    stroke="#333"
+                    stroke-width="1.5"
+                />
+                <circle />
+
+                <!-- 机身分割线 上 -->
+                <line
+                    x1="84" y1="96" x2="217" y2="96"
+                    stroke="#c8c8c8" stroke-width="1" stroke-linecap="butt"
+                />
+                <line
+                    x1="84" y1="96.5" x2="217" y2="96.5"
+                    stroke="#fff" stroke-width="1" stroke-linecap="butt"
+                />
+                
+                
+                <!-- 机身分割线 下 -->
+                <line
+                    x1="84" y1="144" x2="217" y2="144"
+                    stroke="#c8c8c8" stroke-width="1" stroke-linecap="butt"
+                />
+                <line
+                    x1="84" y1="144.5" x2="217" y2="144.5"
+                    stroke="#fff" stroke-width="1" stroke-linecap="butt"
                 />
 
 
@@ -65,7 +112,7 @@
                 <!-- 镜头 -->
                 <circle
                     cx="160.5" cy="117.5" r="28" 
-                    fill="transparent"
+                    fill="#fff"
                     stroke="#c1c2c3"
                 />
                 <circle
@@ -107,6 +154,42 @@
                 />
 
                 
+                <ellipse
+                    cx="160.5" cy="118.5" rx="6" ry="3" 
+                    fill="#000000"
+                    stroke="transparent"
+                />
+                
+                <!-- 两侧装饰 -->
+                <path
+                    d="
+                        M 81 85
+                        l 1 -1
+                        h 1.5
+                        v 10
+                        h -1.5
+                        l -1 -1
+                        v -8
+                    "
+                    stroke="#403e3e"
+                    fill="url(#lg1)"
+                />
+
+                
+                <path
+                    d="
+                        M 219 85
+                        l -1 -1
+                        h -1.5
+                        v 10
+                        h 1.5
+                        l 1 -1
+                        v -8
+                        Z
+                    "
+                    stroke="#403e3e"
+                    fill="url(#lg1)"
+                />
 
             </svg>
         </div>
